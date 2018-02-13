@@ -1,0 +1,139 @@
+
+<input type=button value="beep" onclick="{
+
+document.getElementById('myDiv01').innerHTML = 'beep<br>'
+document.getElementById('myDiv01').innerHTML += 'beep<br>'
+document.getElementById('myDiv01').innerHTML += 'lettuce<br>'
+document.getElementById('myDiv01').innerHTML += 'rigatoni<br>'
+document.getElementById('myDiv01').innerHTML += 'ravioli<br>'
+document.getElementById('myDiv01').innerHTML += 'Its your boys<br>'
+document.getElementById('myDiv01').innerHTML += 'the sphaget Brothers<br>'
+document.getElementById('myDiv01').style.color = 'blue'
+}">
+
+<script>
+
+
+   document.myHuman = new Array(7)
+    
+    document.myHuman[0] = 'Barthalemuel'
+    document.myHuman[1] = 'Alfred from batman'
+    document.myHuman[2] = 'Manuel'
+    document.myHuman[3] = 'Nigel Thornberry'
+    document.myHuman[4] = 'Cuthulu'
+    document.myHuman[5] = 'Zach and his osu game'
+    document.myHuman[6] = 'Drae and his reactor idle'
+    
+   
+    document.myMagic = new Array() 
+    
+    
+    document.myMagic[0] = '<img src = "http://1.media.dorkly.cvcdn.com/29/82/20befd0953a3cc8f9cd8b2aaa8a4d3d7.gif">'
+    document.myMagic[0]
+    document.myMagic[1] = '<img src = "http://i.imgur.com/ucBBjaB.gif">'
+    document.myMagic[1]
+    document.myMagic[2] = '<img src = "https://s-media-cache-ak0.pinimg.com/originals/6b/92/e3/6b92e33ec04e41d46bf936ae50935ace.gif">'
+    document.myMagic[2]
+    document.myMagic[3] = '<img src = "https://media.giphy.com/media/igQv3dEGdBrzO/giphy.gif">'
+    document.myMagic[3]
+    document.myMagic[4] = '<img src = "http://cdn.smosh.com/sites/default/files/bloguploads/nigel-thornberry-batman.gif">'
+    document.myMagic[4]
+    document.myMagic[5] = '<img src = "http://2.media.dorkly.cvcdn.com/64/52/bc84de2a62681956ab12cb4cb2fbd316.gif">'
+     document.myMagic[5]
+    document.myMagic[6] = '<img src = "https://media.tenor.co/images/2746f1e064fdc7ad0f7daf421822aa40/tenor.gif">'
+     document.myMagic[6]
+    document.myMagic[7] = '<img src = "http://cdn.smosh.com/sites/default/files/bloguploads/pokemon-gif-mudkip-dance.gif">'
+    document.myMagic[7]
+    document.myMagic[8] = '<img src = "https://media.giphy.com/media/1F1p6zXsYyt8I/giphy.gif">'
+     document.myMagic[8]
+    document.myMagic[9] = '<img src = "http://reactiongifs.me/wp-content/uploads/2013/08/Supernatural-gif-mouth-open.gif">'
+     document.myMagic[9]
+    document.myMagic[10] ='<img src = "http://i1.kym-cdn.com/photos/images/original/001/197/042/9d4.gif">'
+     document.myMagic[10]
+    document.myMagic[11] = '<img src = "https://media.tenor.co/images/549683372bb845ccc0f95535266d1777/tenor.gif">'
+     document.myMagic[11]
+    document.myMagic[12] = '<img src = "https://media.giphy.com/media/E8w96Xl14eJbO/giphy.gif">'
+     document.myMagic[12]
+    document.myMagic[13] = '<img src = "http://esq.h-cdn.co/assets/cm/15/06/54d3d4dba3e94_-_cage-gifs-monster.gif"> '
+     
+     
+</script>
+
+
+<input type=button value="My Magic Button" onclick="{
+ document.getElementById('myDiv1').innerHTML = ''
+ for (myLoop = 0; myLoop <= 13; myLoop++){
+  document.getElementById('myDiv1').innerHTML += myLoop +' '+ document.myMagic[myLoop] + '<br>'
+ }
+}">
+
+
+
+<div id="myDiv1">
+<div id="myDiv01">
+
+<body id = body style="background-color:red" onkeypress="{
+	if(event.keyCode==97){    document.getElementById('my01').style.left  = parseInt(document.getElementById('my01').style.left)-5+'px' }   // small 'a' key go left
+	if(event.keyCode==119){   document.getElementById('my01').style.top  = parseInt(document.getElementById('my01').style.top)-5+'px'}   // small 'w' key go up
+    if(event.keyCode==100){    document.getElementById('my01').style.left  = parseInt(document.getElementById('my01').style.left)+5+'px'}   // small 'd' key go right
+    if(event.keyCode==115){   document.getElementById('my01').style.top  = parseInt(document.getElementById('my01').style.top)+5+'px'}     // small 's' key go dow
+}">
+
+
+
+
+<img id="my01" style="position:absolute; left:100px; top:50px;"
+    src="http://rs862.pbsrc.com/albums/ab187/rocker_4u/thth4r1sewl.gif~c200">
+    
+    
+    
+    
+    </body>
+
+   <table border=1>
+       <tr>
+           <td></td>
+           <td>  
+    <input type=button value="W" onclick="{
+     document.getElementById('my01').style.top  = parseInt(document.getElementById('my01').style.top)-5+'px'}"
+  </td>
+           <td></td>
+       </tr>
+       <tr>
+           <td> <input type=button value="A" onclick="{  
+ document.getElementById('my01').style.left  = parseInt(document.getElementById('my01').style.left)-5+'px'
+ }">
+           </td>
+           <td></td>
+           <td>  <input type=button value="D" onclick="{
+    document.getElementById('my01').style.left  = parseInt(document.getElementById('my01').style.left)+5+'px'
+  
+   }">
+           </td>
+       </tr>
+              <tr>
+           <td></td>
+           <td>  
+    <input type=button value="S" onclick="{
+     document.getElementById('my01').style.top  = parseInt(document.getElementById('my01').style.top)+5+'px'}"
+  </td>
+           <td></td>
+       </tr>
+
+
+
+
+<input type=button value="click me" onclick="{
+value='why did you listen'}">
+
+
+<div id="image">
+
+
+
+<input type=button value="DO IT" onclick="{
+document.getElementById('myImage').style.visibility='visible'
+
+
+}">
+<img id="myImage" style="visibility:hidden;" src="https://i.ytimg.com/vi/iF0M-J_CORc/maxresdefault.jpg">
