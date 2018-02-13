@@ -1,0 +1,14 @@
+x= <input id="myText01" type=text value='DVA' size=4><br>
+
+<input type=button value="beans"  onclick="{
+myTemp=''
+myInput = document.getElementById('myText01').value
+for (myLoop =1; myLoop<=1000; myLoop++) {
+ 
+ myTemp+= myLoop +','+ myInput +'<br>'
+     }
+
+document.getElementById('myDiv01').innerHTML= myTemp
+}">
+
+<div id="myDiv01"></div><br>
