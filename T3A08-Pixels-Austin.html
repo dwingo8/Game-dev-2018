@@ -1,1 +1,23 @@
-bomb
+<h2 align=center>Pixels by Austin</h2>
+<input type=button value="go Right" onclick="{
+
+document.getElementById('myDiv01').style.left= 
+parseInt(document.getElementById('myDiv01').style.left) + 6
+}">
+<input type=button value="go left" onclick="{
+
+document.getElementById('myDiv01').style.left= 
+parseInt(document.getElementById('myDiv01').style.left) - 6
+}">
+<input type=button value="go up" onclick="{
+
+document.getElementById('myDiv01').style.top= 
+parseInt(document.getElementById('myDiv01').style.top) - 6
+}">
+<input type=button value="go down" onclick="{
+
+document.getElementById('myDiv01').style.top= 
+parseInt(document.getElementById('myDiv01').style.top) + 6
+}">
+
+<div id="myDiv01" style="position:absolute; left:20px; top:80px;"  >Austin</div><br> 
