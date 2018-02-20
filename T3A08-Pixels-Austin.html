@@ -1,23 +1,51 @@
 <h2 align=center>Pixels by Austin</h2>
-<input type=button value="go Right" onclick="{
+<head>
+<style>
+table, td {
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
 
-document.getElementById('myDiv01').style.left= 
-parseInt(document.getElementById('myDiv01').style.left) + 6
-}">
-<input type=button value="go left" onclick="{
+<h3>A demonstration of how to access a TABLE element</h3>
 
-document.getElementById('myDiv01').style.left= 
-parseInt(document.getElementById('myDiv01').style.left) - 6
-}">
-<input type=button value="go up" onclick="{
+<table id="myTable">
+  <tr>
+    <td>cell 1</td>
+    <td><input type=button value="go up" onclick="{
 
 document.getElementById('myDiv01').style.top= 
 parseInt(document.getElementById('myDiv01').style.top) - 6
-}">
-<input type=button value="go down" onclick="{
+}"></td>
+    <td>cell 3</td>
+</tr>
+  <tr>
+    <td><input type=button value="go left" onclick="{
+
+document.getElementById('myDiv01').style.left= 
+parseInt(document.getElementById('myDiv01').style.left) - 6
+}"></td>
+ <td>cell 5</td>
+<td><input type=button value="go Right" onclick="{
+
+document.getElementById('myDiv01').style.left= 
+parseInt(document.getElementById('myDiv01').style.left) + 6
+}"></td>
+</tr>
+  <tr>
+<td>cell 7</td>
+<td><input type=button value="go down" onclick="{
 
 document.getElementById('myDiv01').style.top= 
 parseInt(document.getElementById('myDiv01').style.top) + 6
-}">
+}"></td>
+<td>cell 9</td>
+  </tr>
+</table>
 
-<div id="myDiv01" style="position:absolute; left:20px; top:80px;"  >Austin</div><br> 
+
+
+
+
+<img id="myDiv01" src="https://media.giphy.com/media/eCrTUQnV50ffO/giphy.gif" style="position:absolute; left:500px; top:500px;"  </div><br> 
