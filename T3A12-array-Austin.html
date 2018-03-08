@@ -1,0 +1,48 @@
+<input type=button value="moo" onclick="
+//alert( Math.floor(Math.random()*9+1) )
+
+myStuff = new Array()
+myStuff[0] = 'bobo'
+myStuff[1] = 'bobobo'
+myStuff[2] = 'bobobobo'
+myStuff[3] = 'bobobobobobo'
+myStuff[4] = 'bobobobobobobobo'
+myStuff[5] = 'bobobobobobobobobobo'
+myStuff[6] = 'bobobobobobobobobobobobo'
+myStuff[7] = 'bobobobobobobobobobobobobobo'
+myStuff[8] = 'bobobobobobobobobobobobobobobobo'
+
+for (myLoop=0; myLoop <= 8; myLoop++){
+   document.getElementById('myDiv01').innerHTML += myStuff[myLoop] + '<br>' 
+}"><br>
+
+
+<div id="myDiv01"><br>
+
+
+
+<input type=text id="myText01" size=6 value= 5><br>
+<input type=button value="ron my random" onclick="
+
+
+myRandomNumber = new Array()
+
+
+
+
+myRandomNumber[0] = Math.floor(Math.random()*9+1)
+myRandomNumber[1] = Math.floor(Math.random()*9+1)
+myRandomNumber[2] = Math.floor(Math.random()*9+1)
+myRandomNumber[3] = Math.floor(Math.random()*9+1)
+myRandomNumber[4] = Math.floor(Math.random()*9+1)
+myRandomNumber[5] = Math.floor(Math.random()*9+1)
+
+
+for (myLoop=1; myLoop <= 5; myLoop++){
+  document.getElementById('myDiv02').innerHTML += myRandomNumber[myLoop] + '<br>'
+}"><br>
+
+
+
+<div id="myDiv02">
+
