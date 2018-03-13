@@ -1,0 +1,64 @@
+
+
+
+<input type=button value="console.log" onclick="{
+console.log('bob')
+}"><br><br>
+
+
+
+<input type=button value="console.trace" onclick="{
+console.trace()
+}"><br><br>
+
+<input type=button value="console.clear" onclick="{
+console.clear()
+}"><br><br>
+
+<input type=button value="console.assert(false)" onclick="{
+console.assert(false, 'log this')
+}"><br><br>
+
+
+<input type=button value="console.table()" onclick="{
+for (myLoop=0; myLoop<=4; myLoop++){
+
+console.table([{name:'Oswald', age:myLoop}])
+}
+}"><br><br>
+
+
+
+<input type=button value="console.memory" onclick="{
+console.error(console.memory)
+}"><br><br>
+
+
+<input type=button value="console.group" onclick="{
+console.group('1')
+console.group('2')
+console.groupEnd('1')
+console.groupEnd('2')
+}"><br><br>
+
+
+<input type=button value="console.count" onclick="{
+for (myLoop=0; myLoop<=4; myLoop++){
+console.count('counting')
+
+}
+}"><br><br>
+
+
+
+<input type=button value="variables" onclick="{
+console.log('The calling type ' + this.type)
+}"><br><br>
+
+
+
+
+
+
+
+
