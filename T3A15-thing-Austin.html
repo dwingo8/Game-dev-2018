@@ -2,31 +2,6 @@
 
 
 
-<body id = body onkeypress="{
-	
-if(event.keyCode==97){ document.getElementById('my01').style.left  = parseInt(document.getElementById('my01').style.left)-5+'px' }  // small 'a' key go left
-
-if(event.keyCode==119){   document.getElementById('my01').style.top  = parseInt(document.getElementById('my01').style.top)-5+'px'} // small 'w' key go up
-    
-if(event.keyCode==100){    document.getElementById('my01').style.left  = parseInt(document.getElementById('my01').style.left)+5+'px'} // small 'd' key go right
-    
-if(event.keyCode==115){   document.getElementById('my01').style.top  = parseInt(document.getElementById('my01').style.top)+5+'px'} // small 's' key go dow
-n}">
-
-
-
-
-
-<img id="my01" style="position:absolute; left:200px; top:50px;"
-    
-    src="http://rs862.pbsrc.com/albums/ab187/rocker_4u/thth4r1sewl.gif~c200">
-    
-    
-    
-    
-    
-</body>
-
 
 
 
@@ -56,14 +31,48 @@ return true
 }
 </script>
 
-<h2 align=center>T3A16 Collisions by Fred</h2>
+<h2 align=center>T3A15 Collisions by Austin</h2>
 
 <input type=button value="go Right" onclick="{
 document.getElementById('myDiv01').style.left =
 parseInt(document.getElementById('myDiv01').style.left) + 6
 
 if (myHitOther('myDiv01', 'myDiv02')){
-alert('two bean')
+document.getElementById('myDiv03').innerHTML += 'cool bean my dude<br>'
+
+document.getElementById('myDiv01').style.left = '20'
+}
+}">
+
+
+<input type=button value="go left" onclick="{
+document.getElementById('myDiv01').style.left =
+parseInt(document.getElementById('myDiv01').style.left) - 6
+
+if (myHitOther('myDiv01', 'myDiv02')){
+document.getElementById('myDiv03').innerHTML += 'cool bean my dude<br>'
+
+document.getElementById('myDiv01').style.left = '20'
+}
+}">
+
+<input type=button value="go up" onclick="{
+document.getElementById('myDiv01').style.top =
+parseInt(document.getElementById('myDiv01').style.top) - 6
+
+if (myHitOther('myDiv01', 'myDiv02')){
+document.getElementById('myDiv03').innerHTML += 'cool bean my dude<br>'
+
+document.getElementById('myDiv01').style.left = '20'
+}
+}">
+
+<input type=button value="go down" onclick="{
+document.getElementById('myDiv01').style.top =
+parseInt(document.getElementById('myDiv01').style.top) + 6
+
+if (myHitOther('myDiv01', 'myDiv02')){
+document.getElementById('myDiv03').innerHTML += 'cool bean my dude<br>'
 
 document.getElementById('myDiv01').style.left = '20'
 }
@@ -74,6 +83,9 @@ document.getElementById('myDiv01').style.left = '20'
 <div id="myDiv02" style="position:absolute; left:100; top:80; width:30;
 height:20;">bean</div><br>
 
+
+<div id="myDiv03" style="position:absolute; left:200; top:80; width:30;
+height:20;"></div><br>
 
 
 
