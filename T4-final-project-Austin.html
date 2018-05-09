@@ -71,6 +71,14 @@ document.getElementById('bullet1').style.left = '-200px'
       document.getElementById('myPoints').innerHTML = num
 clearInterval(document.myShot)
 }
+if (myHitOther('bullet1','move4')) {
+document.getElementById('myShowDiv3').innerHTML = 'The bullet hit move 2'
+document.getElementById('bullet1').style.visibility = 'hidden'
+document.getElementById('bullet1').style.left = '-200px'
+  num += 1;
+      document.getElementById('myPoints').innerHTML = num
+clearInterval(document.myShot)
+}
 }
 // ******************** Object Detection finished ************************** -->
 // ******************** Object Motion Below ************************** -->
@@ -92,7 +100,11 @@ document.getElementById('myShowDiv2').innerHTML = 'move2 x='+parseInt(document.g
 '<br> move2 x='+parseInt(document.getElementById('move2').style.left) +', y='+parseInt(document.getElementById('move2').style.top)
 
  document.getElementById('move2').style.left = parseInt(document.getElementById('move2').style.left)+(Math.round(Math.random()*20-10))+'px'
-  document.getElementById('move2').style.top  = parseInt(document.getElementById('move2').style.top)+(Math.round(Math.random()*20-10))+'px'}
+  
+document.getElementById('move2').style.top  = parseInt(document.getElementById('move2').style.top)+(Math.round(Math.random()*20-10))+'px'
+ document.getElementById('move4').style.left = parseInt(document.getElementById('move4').style.left)+(Math.round(Math.random()*20-10))+'px'
+  
+document.getElementById('move4').style.top  = parseInt(document.getElementById('move4').style.top)+(Math.round(Math.random()*20-10))+'px'}
 function myGunPrep(){
 document.getElementById('bullet1').style.visibility = 'visible'
 document.getElementById('bullet1').style.left = document.getElementById('move1').style.left
@@ -139,7 +151,7 @@ Click to hide.
 <!-- ******************** Following should be all your images ************************** -->
 <img id="move1" src="https://vignette.wikia.nocookie.net/overwatch/images/b/b1/Zenyatta_cute.png/revision/latest?cb=20170228050046" style="position:absolute; width:100px; height:100px; left:30px; top:250px" onClick="myGunPrep()">
 <img id="move2" src="https://vignette.wikia.nocookie.net/overwatch/images/2/2b/Lucio_Spray_-_Pixel.png/revision/latest?cb=20160531190139" style="position:absolute; width:100px; height:100px; left:500px; top:240px;"/>
-
+<img id="move4" src="https://vignette.wikia.nocookie.net/overwatch/images/7/76/Moira_Pixel.png/revision/latest?cb=20180325164029" style="position:absolute; width:100px; height:100px; left:600px; top:440px;"/>
 <img id="bullet1" src="https://i.ebayimg.com/images/g/u2wAAOSwR4FZg9Q-/s-l300.jpg" style="position:absolute; width:40px; height:40px; left:500px; top:240px; visibility:hidden"/>
 <!-- ******************** This is the silly little dot the main object hits ************************** -->
 <h1 style="position:absolute;left:200px;top:230px;"><font color=red>.</font></h1>
