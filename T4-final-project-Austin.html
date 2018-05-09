@@ -90,7 +90,9 @@ document.getElementById('myShowDiv2').innerHTML = 'move2 x='+parseInt(document.g
 ', y='+parseInt(document.getElementById('move2').style.top) +
 '<br> move2 x='+parseInt(document.getElementById('move2').style.left) +', y='+parseInt(document.getElementById('move2').style.top) +
 '<br> move2 x='+parseInt(document.getElementById('move2').style.left) +', y='+parseInt(document.getElementById('move2').style.top)
-}
+
+ document.getElementById('move2').style.left = parseInt(document.getElementById('move2').style.left)+(Math.round(Math.random()*20-10))+'px'
+  document.getElementById('move2').style.top  = parseInt(document.getElementById('move2').style.top)+(Math.round(Math.random()*20-10))+'px'}
 function myGunPrep(){
 document.getElementById('bullet1').style.visibility = 'visible'
 document.getElementById('bullet1').style.left = document.getElementById('move1').style.left
