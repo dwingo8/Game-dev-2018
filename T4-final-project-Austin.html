@@ -79,6 +79,7 @@ document.getElementById('bullet1').style.left = '-200px'
       document.getElementById('myPoints').innerHTML = num
 clearInterval(document.myShot)
 }
+
 }
 // ******************** Object Detection finished ************************** -->
 // ******************** Object Motion Below ************************** -->
@@ -115,6 +116,8 @@ document.myShot = setInterval('myGun()', 30) // calls the function every 30 mill
 function myGun(){
 document.getElementById('bullet1').style.left = parseInt(document.getElementById('bullet1').style.left) + 20 + 'px'
 }
+
+
 </script>
 </head>
 <!-- ******************** Here the webpage begins ************************** -->
@@ -163,8 +166,39 @@ Note: ontouchstart is faster than onclick but only works on touch screens or mob
 <div id="myShowDiv2" style="width:300px; background-color:yellow style.visibility = hidden">out 2</div>
 <div id="myShowDiv3" style="width:300px; background-color:yellow style.visibility = hidden">out 3</div>
 <p style="color:white">You have <a id="myPoints" style="background-color:yellow color:white">0</a> points!</p>
-<br>At the bottom of every page make sure you include the following button:<br>
-<input type=button value="Back" style="font-size:25px" onclick="{window.history.back()}"><br><br>
+
+
 </body>
 </html>
+
+
+
+
+<html>
+<body>
+
+
+
+<button onclick="myFunction()">get to 18</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var hour = new Date().getHours(); 
+    var greeting;
+    if (num < 18) {
+        greeting = "you suck";
+    } else {
+        location = 'https://memegenerator.net/img/images/17007216.jpg';
+    }
+    document.getElementById("demo").innerHTML = greeting;
+}
+</script>
+
+</body>
+</html>
+
+
+
 
