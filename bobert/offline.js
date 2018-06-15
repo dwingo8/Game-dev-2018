@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1527784335,
+	"version": 1529096554,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -9,6 +9,7 @@
 		"images/tiledbackground.png",
 		"images/bullet-sheet0.png",
 		"images/enemy-sheet0.png",
+		"media/overwatch - torbjörn on drugs.m4a",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
